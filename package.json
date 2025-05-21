@@ -9,8 +9,7 @@
     "lint": "next lint",
     "predev": "npm run typegen",
     "prebuild": "npm run typegen",
-    "typegen": "sanity schema extract --path=./sanity/extract.json && sanity typegen generate",
-    "postinstall": "npm install --legacy-peer-deps"
+    "typegen": "sanity schema extract --path=./sanity/extract.json && sanity typegen generate"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.2",
