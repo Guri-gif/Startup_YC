@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+
+.text-30-extrabold {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+
+.text-30-bold {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+.text-30-semibold {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+
+.text-26-semibold {
+  font-size: 26px;
+  font-weight: 600;
+  color: black;
+}
+
+.text-24-black {
+  font-size: 24px;
+  font-weight: 900;
+  color: black;
+}
+
+.text-20-medium {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.text-16-medium {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.text-14-normal {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.pink_container {
+  width: 100%;
+  background-color: var(--primary);
+  min-height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem;
+  background-color: #EE2B69;
+  background-image: linear-gradient(to right, transparent 49.5%, rgba(251, 232, 67, 0.2) 49.5%, rgba(251, 232, 67, 0.6) 50.5%, transparent 50.5%);
+  background-size: 5% 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.tag {
+  background-color: #FBE843;
+  padding: 0.75rem 1.5rem; /* py-3 (top/bottom) px-6 (left/right) */
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.125rem; /* rounded-sm */
+  position: relative; /* for absolute positioning of pseudo-elements */
+}
+
+/* Top-left triangle (black) */
+.tag::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem; /* before:top-2 (2 * 0.25rem = 0.5rem) */
+  left: 0.5rem; /* before:left-2 */
+  width: 0;
+  height: 0;
+  border-top: 10px solid black; /* before:border-t-[10px] before:border-t-black */
+  border-right: 10px solid transparent; /* before:border-r-[10px] before:border-r-transparent */
+}
+
+/* Bottom-right triangle (black) */
+.tag::after {
+  content: '';
+  position: absolute;
+  bottom: 0.5rem; /* after:bottom-2 */
+  right: 0.5rem; /* after:right-2 */
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid black; /* after:border-b-[10px] after:border-b-black */
+  border-left: 10px solid transparent; /* after:border-l-[10px] after:border-l-transparent */
+}
+
+.heading {
+  text-transform: uppercase;
+  background-color: black;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 36px;
+  line-height: 46px;
+  max-width: 80rem;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+
+.sub-heading {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  max-width: 48rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.section_container {
+  padding: 2.5rem 1.5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.card_grid-sm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.no-result {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile_container {
+  width: 100%;
+  padding: 5rem 1.5rem 2.5rem 1.5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.search-input {
+  flex: 1;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  outline: none;
+}
+
+.search-input::placeholder {
+  font-weight: 700;
+  color: black;
+}
